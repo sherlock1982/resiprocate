@@ -1190,7 +1190,7 @@ namespace resip
 
    // returns true if it scucceeded
    bool
-      stunParseHostName(char* peerName,
+      stunParseHostName(const char* peerName,
          uint32_t& ip,
          uint16_t& portVal,
          uint16_t defaultPort)
@@ -1296,7 +1296,7 @@ namespace resip
 
 
    bool
-      stunParseServerName(char* name, StunAddress4& addr)
+      stunParseServerName(const char* name, StunAddress4& addr)
    {
       resip_assert(name);
 

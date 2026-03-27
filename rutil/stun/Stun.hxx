@@ -376,7 +376,7 @@ namespace resip
 
    /// find the IP address of a the specified stun server - return false is fails parse 
    bool
-      stunParseServerName(char* software, StunAddress4& stunServerAddr);
+      stunParseServerName(const char* software, StunAddress4& stunServerAddr);
 
    bool
       stunParseHostName(char* peerName,

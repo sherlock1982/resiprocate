@@ -26,6 +26,8 @@ StackThread::~StackThread()
 #ifndef WIN32
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+#else 
+#pragma warning(disable : 4996)
 #endif
 
 void

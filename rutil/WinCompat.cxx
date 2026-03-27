@@ -14,6 +14,7 @@
 #include "rutil/WinLeakCheck.hxx"
 
 #define RESIPROCATE_SUBSYSTEM Subsystem::TRANSPORT
+#pragma warning(disable : 4996)
 
 
 static char* ConvertLPWSTRToLPSTR(LPWSTR lpwszStrIn)
